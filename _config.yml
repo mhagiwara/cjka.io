@@ -27,14 +27,14 @@ title:                 cjka.io
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
-  Combines the best of static sites and modern web apps.
-  Open `_config.yml` to edit this text.
+  Chinese, Japanese, Korean, and Arabic - Natural Language Processing and Machine Learning recipes and best practices
+  for the hardest four languages to learn in the world.
 
 # A shorter description for the sidebar.
 tagline:               >
-  CJKA stands for Chinese, Japanese, Korean, and Arabic. Natural Language Processing (NLP) and Machine Learning (ML)
-  topics for the four hardest languages to learn in the world
+  Chinese, Japanese, Korean, and Arabic - Natural Language Processing and Machine Learning recipes and best practices
+  for the hardest four languages to learn in the world.
+
 
 # A list of keywords for your blog
 keywords:              []
@@ -51,7 +51,7 @@ author:
   # twitter:             <username>
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2018. All rights reserved.
+copyright:             © Masato Hagiwara. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
