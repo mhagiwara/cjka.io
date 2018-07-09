@@ -44,3 +44,29 @@ There are, though not many, characters with Many-to-1 mappings:
 | ----------------- | ------------- |  ------------------  |
 | 着                | 著             |  zhe - (an aspect marker)   |
 | 著                | 著             |  zhu4 - to write      |
+
+## Wrong Way
+
+The most common type of mistake that you may make when converting between those two scripts is to convert them character by character, by having a mapping table between them and replacing simplified to traditional characters (or the other way around) one by one. If you apply this method to the words below, it will result in wrong conversions. 
+
+| Simplified        | Traditional (wrong)   |  Traditional (correct) | Pinyin and Meanings |
+| ----------------- | ------------- |  ------------------  | ------------- |
+| 头发               | 頭發             | 頭髮             | tou2fa4 - hair  |
+| 干面               | 干面             | 乾麵             | gan1mian4 - dry noodle |
+
+Unfortunately, if you use a random conversion tool you find on the Internet (for example, [this one](https://www.chinese-tools.com/tools/converter-simptrad.html), which is currently at the top result of Google search for "Simplified to Traditional Conversion"), there is a good chance that the tool is based on a simple but wrong algorithm like this. If you want to try out a tool for converting those scripts, at least try some simple words like the ones above to see if the tool is created by people who know what they are doing at all.
+
+## Correct Way
+
+Then, what *is* the correct way to convert between those two scripts? I said earlier that these two are scripts, not languages, but the conversion problem is such a complex issue that it is actually a good practice to treat this as a (somewhat simpler form of) machine translation problem between two different languages.
+
+If you'd like to translate between English and Spanish, you wouldn't just want to simply grab a dictionary and replace one word at a time, would you? In order to "convert" them correctly, you need to actually understand what is written and rewrite the sentence if necessary. Similarly, when you are converting, for example, from traditional to simplified, you need to "understand" if this "著" is actually an aspect marker (which should be simplified to 着) or part of words like "著名" (which should be left as is) and make a decision accordingly.
+
+Correctly converting those two scripts requires far more than just character-based replacement. Actually, my recommendation as of this writing is to _not_ to implement your own conversion. Google translate actually does a decent job converting between those two if you set the source language to Simplified Chinese and the target language "Traditional Chinese" (or vice versa).
+
+If you still need to implement your own conversion, I'd recommend following [Wikipedia's conversion algorithm](https://zh.wikipedia.org/wiki/Help:%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E7%9A%84%E7%B9%81%E7%AE%80%E3%80%81%E5%9C%B0%E5%8C%BA%E8%AF%8D%E5%A4%84%E7%90%86). I'll further discuss this in a future post. 
+
+## Further Reading
+
+A lot of the "pitfalls" I mentioned above are elegantly covered by this amazing paper by Halpern and Kerman: [The Pitfalls and Complexities of Chinese to Chinese Conversion](http://www.cjk.org/cjk/c2c/c2c.pdf). Although the paper is a bit outdated (for example, an average developer doesn't even need to know different character sets and encodings for Chinese - everyone uses Unicode/UTF nowadays) but is a great starting point if you'd like to understand this issue in further depth.
+ 
