@@ -2,8 +2,7 @@
 layout: about
 title: About
 description: >
-  Chinese, Japanese, Korean, and Arabic - Natural Language Processing and Machine Learning recipes and best practices
-  for the hardest four languages to learn in the world.
+  Natural Language Processing (NLP) and Machine Learning (ML) recipes and best practices for Chinese, Japanese, Korean, and Arabic - the hardest four languages to learn in the world.
 menu: true
 order: 1
 ---
