@@ -27,13 +27,13 @@ title:                 cjka.io
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Chinese, Japanese, Korean, and Arabic - Natural Language Processing and Machine Learning recipes and best practices
-  for the hardest four languages to learn in the world.
+  Natural Language Processing (NLP) and Machine Learning (ML) recipes and best practices for Chinese, Japanese, Korean,
+  and Arabic - the hardest four languages to learn in the world.
 
 # A shorter description for the sidebar.
 tagline:               >
-  Chinese, Japanese, Korean, and Arabic - Natural Language Processing and Machine Learning recipes and best practices
-  for the hardest four languages to learn in the world.
+  Natural Language Processing (NLP) and Machine Learning (ML) recipes and best practices for Chinese, Japanese, Korean,
+  and Arabic - the hardest four languages to learn in the world.
 
 
 # A list of keywords for your blog
