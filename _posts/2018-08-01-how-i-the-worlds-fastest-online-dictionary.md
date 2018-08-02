@@ -48,6 +48,8 @@ When you search, you do the same with your query. If the query is "shell", then 
 
 So you dynamically load 307.js, 176.js, ..., 165.js, and combine them. Notice two out of those five trigrams are common between "hello" and "shell". Because of this, when you search "shell," "hello" is included in the combined list of dictionary entries. The final ranking is computed by using a similarity metric (specifically, [Dice coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)) between the "query vector" and each "entry vector". A vector here is just a set of character unigrams, bigrams, and trigrams. 
 
+The entire source code is in [this Github repo](https://github.com/mhagiwara/enja.kdict.org). 
+
 ## Infrastructure
 
 As you saw above, everything about this dictionary is stored in static files, including the entire dictionary data that is split into 512 different JavaScript files. I simply used AWS S3 for serving static website, and CloudFront as the CDN. (partly because I've never used CloudFront for my personal projects). According to tons of feedback I received from Japanese twitter users, the dictionary blazingly fast even when accessed from Japan.
